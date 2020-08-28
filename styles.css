@@ -1,6 +1,5 @@
 body {
-  background-image: url("./assets/bg.jpg");
-  background-repeat: no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("assets/bg.jpg");  background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
   font-family: "Arial", "Helvetica", "sans-serif";
@@ -39,6 +38,8 @@ body {
 }
 
 .nav3 {
+  padding-top:8px;
+  padding-bottom:8px;
   justify-content: space-evenly;
   background-color: #a73634;
   padding-left: 55px;
@@ -48,11 +49,13 @@ body {
 }
 .top {
   margin-top: 25px;
-  border: 5px white solid;
+  border: 10px white solid;
   background-image: url(assets/grid.png), url(assets/top-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 2px 3px #908e8e;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .top2 {
@@ -78,6 +81,7 @@ body {
   margin-bottom: 25px;
   justify-content: space-evenly;
   font-family: "Arial", "Helvetica", "sans-serif";
+  text-decoration: none;
 }
 
 .articles2 {
@@ -86,14 +90,31 @@ body {
   padding: 10px 20px 10px 20px;
   box-shadow: 2px 3px #908e8e;
   font-family: "Arial", "Helvetica", "sans-serif";
+  text-decoration: none;
+
+}
+#articletext{
+  text-decoration: none;
+  text-align: center;
+  color: currentColor;
+  cursor: not-allowed;
+  color: #a73634;
+  justify-content: center;
+
+
 }
 
 #articleleft {
   margin-left: -2px;
+  text-decoration: none;
+
 }
 
 #article-right {
   margin-right: 2px;
+  text-decoration: none;
+ 
+
 }
 
 #date {
@@ -101,40 +122,77 @@ body {
   color: grey;
 }
 
+.threeCircles{
+  display:flex;
+  justify-content:center;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.redDot{
+  height:12px;
+  width:12px;
+  background-color:#983D38;
+  border-radius: 50%;
+  margin:5px;
+  align-self:center;
+  border: solid 1px white;
+}
+
+.dot{
+  height:12px;
+  width:12px;
+  border-radius: 50%;
+  margin:5px;
+  background-color:white;
+}
+
 .h2 {
   font-family: "Arial", "Helvetica", "sans-serif";
 }
 
 #lance {
+  background-position: 100%;
+  padding-top: 100px;
   border: white 5px solid;
   grid-area: header;
   background-image: url(assets/sk8er-4.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 2px 3px #908e8e;
 }
 
 #rodney {
+  padding-top: 100px;
+
   border: white 5px solid;
   grid-area: main;
   background-image: url(assets/sk8er-3.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 2px 3px #908e8e;
 }
 
 #steve {
+  padding-top: 100px;
+  background-position:-2%;
   border: white 5px solid;
   grid-area: footer;
   background-image: url(assets/sk8er-1.png);
   background-repeat: no-repeat;
-  object-fit: contain;
+  box-shadow: 2px 3px #908e8e;
 }
 
 #tommy {
+  padding-top: 100px;
+
   border: white 5px solid;
   grid-area: sidebar;
   background-image: url(assets/sk8er-2.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 101%;
+  box-shadow: 2px 3px #908e8e;
 }
 
 .skaters {
@@ -202,3 +260,8 @@ body {
 #textarea {
   padding-right: 112px;
 }
+
+.btn-container{
+  margin: auto;
+  height:44px;
+  width:166.23px;
