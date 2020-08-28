@@ -1,0 +1,116 @@
+body {
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+.container {
+  font-family: "Arial", "Helvetica", "sans-serif";
+  width: 1000px;
+  margin: auto;
+}
+
+.toplinks {
+  display: flex;
+  font-size: 30px;
+  justify-content: flex-end;
+}
+
+.toplinks > div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav2 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: red;
+}
+.top {
+  margin-top: 25px;
+  border: 5px white solid;
+  background-image: url(assets/grid.png), url(assets/top-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top2 {
+  margin-left: 15px;
+}
+
+.boards {
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+}
+
+.articles {
+  margin-top: 25px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.articles2 {
+  margin: 10px;
+  justify-content: space-between;
+  background-color: white;
+  border: white solid 2px;
+}
+
+#lance {
+  grid-area: header;
+  background-image: url(assets/sk8er-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#rodney {
+  grid-area: main;
+  background-image: url(assets/sk8er-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#steve {
+  grid-area: footer;
+  background-image: url(assets/sk8er-1.png);
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+#tommy {
+  grid-area: sidebar;
+  background-image: url(assets/sk8er-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skaters {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-areas:
+    "header main sidebar"
+    "footer footer sidebar";
+}
+
+.moreinfo {
+  margin-top: 25px;
+  background-color: white;
+  display: grid;
+  grid-template-areas: "main main";
+}
