@@ -10,6 +10,7 @@ body {
   font-family: "Arial", "Helvetica", "sans-serif";
   width: 1000px;
   margin: auto;
+  padding-bottom: 75px;
 }
 
 .toplinks {
@@ -31,11 +32,19 @@ body {
 .nav {
   display: flex;
   justify-content: space-evenly;
+  /* box-shadow: 5px 10px; */
 }
 .nav2 {
-  display: flex;
   justify-content: space-evenly;
-  background-color: red;
+}
+
+.nav3 {
+  justify-content: space-evenly;
+  background-color: #a73634;
+  padding-left: 55px;
+  padding-right: 55px;
+  color: white;
+  box-shadow: 2px 3px #908e8e;
 }
 .top {
   margin-top: 25px;
@@ -43,6 +52,7 @@ body {
   background-image: url(assets/grid.png), url(assets/top-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 2px 3px #908e8e;
 }
 
 .top2 {
@@ -50,25 +60,53 @@ body {
 }
 
 .boards {
+  margin-top: 25px;
   display: flex;
   background-color: white;
   justify-content: space-evenly;
+  box-shadow: 2px 3px #908e8e;
+}
+
+.board2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .articles {
   margin-top: 25px;
   display: flex;
-  box-sizing: border-box;
+  margin-bottom: 25px;
+  justify-content: space-evenly;
+  font-family: "Arial", "Helvetica", "sans-serif";
 }
 
 .articles2 {
-  margin: 10px;
-  justify-content: space-between;
   background-color: white;
-  border: white solid 2px;
+  margin: 5px;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 2px 3px #908e8e;
+  font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+#articleleft {
+  margin-left: -2px;
+}
+
+#article-right {
+  margin-right: 2px;
+}
+
+#date {
+  font-weight: 500;
+  color: grey;
+}
+
+.h2 {
+  font-family: "Arial", "Helvetica", "sans-serif";
 }
 
 #lance {
+  border: white 5px solid;
   grid-area: header;
   background-image: url(assets/sk8er-4.png);
   background-repeat: no-repeat;
@@ -76,6 +114,7 @@ body {
 }
 
 #rodney {
+  border: white 5px solid;
   grid-area: main;
   background-image: url(assets/sk8er-3.png);
   background-repeat: no-repeat;
@@ -83,6 +122,7 @@ body {
 }
 
 #steve {
+  border: white 5px solid;
   grid-area: footer;
   background-image: url(assets/sk8er-1.png);
   background-repeat: no-repeat;
@@ -90,6 +130,7 @@ body {
 }
 
 #tommy {
+  border: white 5px solid;
   grid-area: sidebar;
   background-image: url(assets/sk8er-2.png);
   background-repeat: no-repeat;
@@ -97,10 +138,11 @@ body {
 }
 
 .skaters {
-  margin-top: 25px;
+  color: white;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   grid-template-areas:
@@ -108,9 +150,55 @@ body {
     "footer footer sidebar";
 }
 
+.skaters h2 {
+  text-align: center;
+}
+
 .moreinfo {
-  margin-top: 25px;
+  margin-top: 10px;
   background-color: white;
   display: grid;
   grid-template-areas: "main main";
+  box-shadow: 2px 3px #908e8e;
+}
+
+.right {
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#left {
+  padding-left: 20px;
+  padding-top: 9px;
+  padding-bottom: 25px;
+  padding-right: 50px;
+}
+
+#name {
+  margin-bottom: 10px;
+  padding-right: 300px;
+}
+
+#email {
+  margin-bottom: 10px;
+  padding-right: 300px;
+}
+
+#submit {
+  margin-top: 5px;
+  float: right;
+  background-color: #a73634;
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  color: white;
+}
+
+#textarea {
+  padding-right: 112px;
 }

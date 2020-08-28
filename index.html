@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Document</title>
   </head>
@@ -18,10 +22,10 @@
       </div>
 
       <div class="nav">
-        <label class="nav2">- SK8T NEWS -</label>
-        <label class="nav2">- SKATE BAORDERS -</label>
-        <label class="nav2">- BOARD DESIGN -</label>
-        <label class="nav2">- CONTACT US -</label>
+        <div class="nav3"><label class="nav2">- SK8T NEWS -</label></div>
+        <div class="nav3"><label class="nav2">- SKATE BOARDERS -</label></div>
+        <div class="nav3"><label class="nav2">- BOARD DESIGN -</label></div>
+        <div class="nav3"><label class="nav2">- CONTACT US -</label></div>
       </div>
 
       <div class="top">
@@ -29,8 +33,9 @@
       </div>
 
       <div class="articles">
-        <div class="articles2">
-          <h5>Tony Hawk foundation raises big money at celebrity fundraiser</h5>
+        <div id="articleleft" class="articles2">
+          <h2>Tony Hawk foundation raises big money at celebrity fundraiser</h2>
+          <h5 id="date">October 10,2013</h5>
           <p>
             It was just over 90 degrees in Los Angeles, but that didnt stop the
             throngs from out to celebrate the 10th annual Tony Hawk's Stand Up
@@ -39,49 +44,64 @@
           </p>
         </div>
         <div class="articles2">
-          <h5>Tony Hawk foundation raises big money at celebrity fundraiser</h5>
+          <h2>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h2>
+          <h5 id="date">March 10,2013</h5>
           <p>
-            It was just over 90 degrees in Los Angeles, but that didnt stop the
-            throngs from out to celebrate the 10th annual Tony Hawk's Stand Up
-            For Skateparks benfit Presented by SLS Hotel & Casino Las Vegas on
-            Saturday at the Green Acres Estate in Beverly Hills.
+            The last thing Rodney Mullen, the godfather of street skating,
+            wanted were competitive victories. In this exuberant talk he shares
+            his love of the open skateboarding community and how the unique
+            environments it plays in drive the creation of new tricks--foster..
           </p>
         </div>
 
-        <div class="articles2">
-          <h5>Tony Hawk foundation raises big money at celebrity fundraiser</h5>
+        <div id="article-right" class="articles2">
+          <h2>Ray Barbee Talks 'Ban This'</h2>
+          <h5 id="date">October 4,2013</h5>
           <p>
-            It was just over 90 degrees in Los Angeles, but that didnt stop the
-            throngs from out to celebrate the 10th annual Tony Hawk's Stand Up
-            For Skateparks benfit Presented by SLS Hotel & Casino Las Vegas on
-            Saturday at the Green Acres Estate in Beverly Hills.
+            Since filming is in full swing for the Vans video Adventures With
+            Chris has taken the opportunity to sit some of the team down to look
+            behind the skating of some of their earlier parts. Today we sit down
+            with Ray Barbee, one of the smoothest guys to ever step on a
+            skatebaord and Chris' childhood idol...
           </p>
         </div>
       </div>
 
       <div class="skaters">
-        <main id="lance">Lance Mountain</main>
-        <main id="rodney">Rodney Mullen</main>
-        <sidebar id="tommy">Tommy Guerrero</sidebar>
-        <footer id="steve">Steve Caballero</footer>
+        <main id="lance">
+          <h2>
+            Lance <br />
+            Mountain
+          </h2>
+        </main>
+        <main id="rodney">
+          <h2>Rodney <br />Mullen</h2>
+        </main>
+
+        <sidebar id="tommy"
+          ><h2>Tommy <br />Guerrero</h2></sidebar
+        >
+        <footer id="steve"><h2>Steve Caballero</h2></footer>
       </div>
 
       <div class="boards">
-        <div id="panda"><img src="assets/sk8-3.png" /></div>
-        <div id="monkey"><img src="assets/sk8-4.png" /></div>
-        <div id="message"><img src="assets/sk8-5.png" /></div>
-        <div id="psy"><img src="assets/sk8-6.png" /></div>
-        <div id="hungover"><img src="assets/sk8-7.png" /></div>
-        <div id="shecks"><img src="assets/sk8-8.png" /></div>
-        <div id="fernandez"><img src="assets/sk8-9.png" /></div>
-        <div id="alien"><img src="assets/sk8-10.png" /></div>
-        <div id="elephant"><img src="assets/sk8-2.png" /></div>
-        <div id="green"><img src="assets/sk8-1.png" /></div>
+        <div class="board2" id="panda"><img src="assets/sk8-3.png" /></div>
+        <div class="board2" id="monkey"><img src="assets/sk8-4.png" /></div>
+        <div class="board2" id="message"><img src="assets/sk8-5.png" /></div>
+        <div class="board2" id="psy"><img src="assets/sk8-6.png" /></div>
+        <div class="board2" id="hungover"><img src="assets/sk8-7.png" /></div>
+        <div class="board2" id="shecks"><img src="assets/sk8-8.png" /></div>
+        <div class="board2" id="fernandez"><img src="assets/sk8-9.png" /></div>
+        <div class="board2" id="alien"><img src="assets/sk8-10.png" /></div>
+        <div class="board2" id="elephant"><img src="assets/sk8-2.png" /></div>
+        <div class="board2" id="green"><img src="assets/sk8-1.png" /></div>
       </div>
 
       <div class="moreinfo">
         <section id="left">
-          <p id="moreinfo">Contact Us For More Information</p>
+          <p id="moreinfo">
+            <strong><h3>Contact Us For More Information</h3></strong>
+          </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
             semper nulla ut odio scelerisque varius. Phasellus dui nunc, lacinia
@@ -98,9 +118,11 @@
 
         <div class="right">
           <form>
-            <input id="name" for="name" placeholder="Name" /> <br />
-            <input id="email" for="email" placeholder="Email" /> <br />
+            <input id="name" for="name" placeholder="Name" rows="50" /> <br />
+            <input id="email" for="email" placeholder="Email" rows="20" />
+            <br />
             <textarea
+              id="textarea"
               for="message"
               placeholder="Your Message"
               cols="40"
