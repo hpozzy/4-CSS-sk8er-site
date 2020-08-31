@@ -76,7 +76,7 @@ body {
 }
 
 .articles {
-  margin-top: 25px;
+  margin-top: 15px;
   display: flex;
   margin-bottom: 25px;
   justify-content: space-evenly;
@@ -130,8 +130,8 @@ body {
 }
 
 .redDot{
-  height:12px;
-  width:12px;
+  height:11px;
+  width:11px;
   background-color:#983D38;
   border-radius: 50%;
   margin:5px;
